@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+.card-container{
+    max-width:590px;
+    max-height:440px;
+    
+    border-radius: 10px;
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    margin:10% auto;
+    
+}
+body{
+ 
+    background-color: hsl(30, 38%, 92%);
+   
+    height:100vh;
+}
+
+.part{
+    width:50%;
+    box-sizing: border-box;
+}
+
+.one{
+    
+  
+    border-radius: 10px 0 0 10px;
+}
+
+.two{
+    padding:20px 30px;
+    background: white;
+    border-radius: 0 10px 10px 0;
+}
+
+.part h1{
+    font-size: 2em;
+    margin: 0;
+    
+}
+
+.description{
+    margin-top: 13px;
+}
+
+.description{
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.price{
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0px;   
+}
+.main{
+    font-size: 1.9em;
+    color: hsl(158, 36%, 37%);
+    font-family:l ;
+    margin-right: auto;
+   
+    
+}
+
+.two h1, .main{
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.two h4{
+    font-size: small;
+    letter-spacing: 0.2em;
+}
+
+.canc{
+    font-size: 1em;
+    margin-top: 0px;
+    margin-right: 20%;
+
+   
+}
+
+button{
+    width:100%;
+    height:fit-content;
+    padding:15px;
+    border-radius: 10px;
+    border:none;
+    color:white;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    
+    font-family: 'Montserrat',sans-serif;
+font-weight: 700;
+margin-top:10px;
+
+}
+
+
+
+button img{
+    margin-right: 10px;
+}
+
+.two h4, .two p{
+    color: hsl(228, 12%, 48%);
+}
+button:hover{
+    background-color:hsl(158, 36%, 17%);
+}
+
+@media screen and (max-width:480px){
+    .card-container{
+      
+        max-width:85vw;
+        height:70vh;
+     
+        
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        font-family: 'Montserrat';
+        
+    }
+    .part{
+        width:100%;
+        box-sizing: border-box;
+    }
+
+    .one{
+    
+  
+        border-radius: 10px 10px 0 0;
+        height:60%;
+    }
+
+    .two{
+        border-radius: 0 0 10px 10px ;
+        
+    }
+
+}
