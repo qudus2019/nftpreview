@@ -13,6 +13,32 @@
     --white: hsl(0, 0%, 100%);
 }
 
+div.images{
+    position:relative;
+
+}
+
+div.images .eye{
+  background-color: var(--primaryCyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+    transition: opacity .2s ease-in;
+}
+
+div.images:hover .eye{
+    opacity: 0.9;
+}
+
+.eye img{
+    width:70px;
+}
+
 p{
     font-size: 18px;
 }
@@ -37,8 +63,9 @@ body{
 }
 
 
- img{
-    max-width:100%;
+ div.images > img ,div.images div.eye{
+    width:100%;
+    height:300px;
     margin:0px auto;
     border-radius:10px;
 }
